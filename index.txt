@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI를 이용한 챗봇</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chat-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .message-container {
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .message {
+            display: inline-block;
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            clear: both;
+        }
+
+        .sent {
+            background-color: #DCF8C6;
+            float: right;
+        }
+
+        .received {
+            background-color: #E5E5EA;
+            float: left;
+        }
+
+        #user-input {
+            margin-top: 20px;
+        }
+
+        #user-input input[type="text"] {
+            width: calc(100% - 70px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        #user-input button {
+            width: 60px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-messages">
+            <!-- 대화 내용이 여기에 표시됩니다 -->
+        </div>
+        <div id="user-input">
+            <input type="text" id="message-input" placeholder="메시지를 입력하세요..." />
+            <button id="send-button">전송</button>
+        </div>
+    </div>
+    <script>
+        // JavaScript 코드는 여기에 작성됩니다
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
